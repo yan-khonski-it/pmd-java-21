@@ -11,7 +11,7 @@
     <Root level="WARN">
       <AppenderRef ref="ConsoleAppender"/>
     </Root>
-    <logger name="com.yk.utils.java17pmd" level="INFO" additivity="false">
+    <logger name="com.yk.utils.java21pmd" level="INFO" additivity="false">
       <AppenderRef ref="ConsoleAppender"/>
     </logger>
   </Loggers>
