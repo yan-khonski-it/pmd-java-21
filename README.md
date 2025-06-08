@@ -39,7 +39,7 @@ The PMD result will be
 ### Warning about deprecated rules
 There was a warning when I tried to use a specific rule.
 I found this comment:
-```commandline
+```text
  <!-- Rules, that have been moved into a category -->
 ```
 in the [source code](https://github.com/pmd/pmd/blob/master/pmd-java/src/main/resources/rulesets/java/junit.xml)
