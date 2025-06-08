@@ -82,6 +82,7 @@ To fix it, I checked the phase from **package** to **validate**.
 https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
 
 ## Old versions reference (archived).
+- https://github.com/yan-khonski-it/java-17-pmd/tree/main
 - https://github.com/yan-khonski-it/pmd-java-14
 - https://github.com/yan-khonski-it/mvn-pmd-java11
 

@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 
-<!-- https://github.com/pmd/pmd/blob/master/pmd-java/src/main/resources/rulesets/java/basic.xml -->
+<!-- https://github.com/pmd/pmd/blob/main/pmd-core/src/main/resources/ruleset_2_0_0.xsd -->
+<!-- https://github.com/pmd/pmd/blob/main/pmd-core/src/test/resources/rulesets/dummy/basic.xml -->
 <!-- https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#shortvariable -->
 <ruleset
   name="custom-ruleset"
