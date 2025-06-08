@@ -1,4 +1,4 @@
-package com.yk.utils.java17pmd.app.core;
+package com.yk.utils.java21pmd.app.core;
 
 // AbstractClassWithoutAbstractMethod
 public /* abstract */ class SomeClass {

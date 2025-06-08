@@ -30,8 +30,8 @@ public final class NumberUtils {
 ```
 The PMD result will be
 ```text
-[INFO] PMD Failure: com.yk.utils.java17pmd.app.utils.NumberUtils:10 Rule:ShortMethodName Priority:3 Avoid using short method names.
-[INFO] PMD Failure: com.yk.utils.java17pmd.app.utils.NumberUtils:10 Rule:ShortVariable Priority:3 Avoid variables with short names like n.
+[INFO] PMD Failure: utils.com.yk.utils.java21pmd.app.NumberUtils:10 Rule:ShortMethodName Priority:3 Avoid using short method names.
+[INFO] PMD Failure: utils.com.yk.utils.java21pmd.app.NumberUtils:10 Rule:ShortVariable Priority:3 Avoid variables with short names like n.
 ```
 
 ## Problems I faced.

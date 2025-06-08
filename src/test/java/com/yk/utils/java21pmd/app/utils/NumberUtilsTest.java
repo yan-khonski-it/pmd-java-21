@@ -1,4 +1,4 @@
-package com.yk.utils.java17pmd.app.utils;
+package com.yk.utils.java21pmd.app.utils;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

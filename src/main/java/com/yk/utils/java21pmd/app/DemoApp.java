@@ -1,11 +1,11 @@
-package com.yk.utils.java17pmd.app;
+package com.yk.utils.java21pmd.app;
 
-import com.yk.utils.java17pmd.app.core.SomeClass;
-import com.yk.utils.java17pmd.app.utils.NumberUtils;
+import com.yk.utils.java21pmd.app.core.SomeClass;
+import com.yk.utils.java21pmd.app.utils.NumberUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-// UnusedImports
+// UnnecessaryImport
 //  import java.util.ArrayList;
 
 public class DemoApp {
