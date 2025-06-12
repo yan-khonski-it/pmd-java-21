@@ -1,23 +1,52 @@
 <?xml version="1.0"?>
 
-<!-- https://github.com/pmd/pmd/blob/main/pmd-core/src/main/resources/ruleset_2_0_0.xsd -->
-<!-- https://github.com/pmd/pmd/blob/main/pmd-core/src/test/resources/rulesets/dummy/basic.xml -->
-<!-- https://pmd.github.io/pmd/pmd_rules_java_codestyle.html#shortvariable -->
+<!-- How to make custom rulesets -->
+<!-- https://pmd.github.io/pmd/pmd_userdocs_making_rulesets.html -->
+
+<!-- All rulesets -->
+<!-- https://github.com/pmd/pmd/tree/main/pmd-java/src/main/resources/category/java -->
+
+<!-- The reasons for customizing rulesets-->
+<!-- I can choose rulesets which I want to have. I can exclude specific rules from those rulesets -->
+<!-- Some rules do not make sense, so I excluded them. -->
 <ruleset
   name="custom-ruleset"
   xmlns="http://pmd.sourceforge.net/ruleset/2.0.0">
+
   <description>
     The Basic ruleset contains a collection of good practices which should be followed.
   </description>
 
-  <rule ref="category/java/design.xml/SimplifiedTernary"/>
-  <rule ref="category/java/errorprone.xml/AvoidDecimalLiteralsInBigDecimalConstructor"/>
-  <rule ref="category/java/codestyle.xml/ShortMethodName"/>
-  <rule ref="category/java/codestyle.xml/UnnecessaryImport" />
+  <rule ref="category/java/errorprone.xml"/>
+  <rule ref="category/java/performance.xml"/>
+  <rule ref="category/java/security.xml"/>
+
+  <rule ref="category/java/bestpractices.xml">
+    <exclude name="GuardLogStatement"/>
+  </rule>
+
+  <rule ref="category/java/codestyle.xml">
+    <exclude name="ShortVariable"/>
+    <exclude name="ShortClassName"/>
+    <exclude name="LocalVariableCouldBeFinal"/>
+    <exclude name="AtLeastOneConstructor"/>
+    <exclude name="MethodArgumentCouldBeFinal"/>
+    <exclude name="OnlyOneReturn"/>
+  </rule>
+
   <rule ref="category/java/codestyle.xml/ShortVariable">
     <!-- Name id is valid name -->
     <properties>
       <property name="violationSuppressXPath" value=".[@Name='id']"/>
     </properties>
+  </rule>
+
+  <rule ref="category/java/design.xml">
+    <exclude name="LawOfDemeter" />
+    <exclude name="LoosePackageCoupling" />
+  </rule>
+
+  <rule ref="category/java/multithreading.xml">
+    <exclude name="UseConcurrentHashMap" />
   </rule>
 </ruleset>

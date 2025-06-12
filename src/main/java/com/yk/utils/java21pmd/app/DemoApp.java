@@ -8,6 +8,8 @@ import org.apache.logging.log4j.Logger;
 // UnnecessaryImport
 //  import java.util.ArrayList;
 
+// Either a utility class or a normal class with a non private constructor.
+@SuppressWarnings("PMD.UseUtilityClass")
 public class DemoApp {
 
   private static final Logger LOGGER = LogManager.getLogger(DemoApp.class);
@@ -34,5 +36,8 @@ public class DemoApp {
     int number = 10;
     String convertedNumber = NumberUtils.convertNumberToString(number);
     LOGGER.info("Converted number: {} is string: {}.", number, convertedNumber);
+
+    boolean isOddPositive = NumberUtils.isSpecialNumber(number);
+    LOGGER.info("isOddPositive: {}", isOddPositive);
   }
 }

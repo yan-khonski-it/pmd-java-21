@@ -69,7 +69,6 @@
           <targetJdk>${java.version}</targetJdk>
           <rulesets>
             <ruleset>custom-ruleset.xml</ruleset>
-            <ruleset>category/java/bestpractices.xml</ruleset>
           </rulesets>
         </configuration>
         <executions>
